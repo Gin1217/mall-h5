@@ -1,7 +1,7 @@
 <template>
   <div class="home">
   <!-- <van-button type="primary">默认按钮</van-button> -->
-  <div>你好</div>
+  你好
   </div>
 </template>
 
