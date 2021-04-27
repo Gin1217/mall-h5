@@ -15,8 +15,7 @@ export default {
       transitionName: "slide-left",
       isShowNav: true,
       ShowMenuList: ["/", "/home", "/category", "/cart", "/user"],
-   //该变量为需要导航栏的数组
-   };
+    };
   },
   components: {
     navBar,

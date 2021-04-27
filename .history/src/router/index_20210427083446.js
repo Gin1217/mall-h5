@@ -19,47 +19,47 @@ const routes = [
       index: 1,
     },
   },
-  {
-    path: '/category',
-    name: 'category',
-    component: () =>
-      import(/* webpackChunkName: "category" */ '../views/Category.vue'),
-    meta: {
-      index: 1,
-    },
-  },
-  {
-    path: '/cart',
-    name: 'cart',
-    component: () => import(/* webpackChunkName: "cart" */ '../views/Cart.vue'),
-    meta: {
-      index: 1,
-    },
-  },
-  {
-    path: '/user',
-    name: 'user',
-    component: () => import(/* webpackChunkName: "user" */ '../views/User.vue'),
-    meta: {
-      index: 1,
-    },
-  },
-  {
-    path: '/detail',
-    name: 'detail',
-    component: () => import(/* webpackChunkName: "detail" */ '../views/Detail.vue'),
-    meta: {
-      index: 2
-    }
-  },
   // {
-  //   path: '/login',
-  //   name: 'login',
-  //   component: () => import(/* webpackChunkName: "detail" */ '../views/Login.vue'),
+  //   path: '/category',
+  //   name: 'category',
+  //   component: () =>
+  //     import(/* webpackChunkName: "category" */ '../views/Category.vue'),
+  //   meta: {
+  //     index: 1,
+  //   },
+  // },
+  // {
+  //   path: '/cart',
+  //   name: 'cart',
+  //   component: () => import(/* webpackChunkName: "cart" */ '../views/Cart.vue'),
+  //   meta: {
+  //     index: 1,
+  //   },
+  // },
+  // {
+  //   path: '/user',
+  //   name: 'user',
+  //   component: () => import(/* webpackChunkName: "user" */ '../views/User.vue'),
+  //   meta: {
+  //     index: 1,
+  //   },
+  // },
+  // {
+  //   path: '/detail',
+  //   name: 'detail',
+  //   component: () => import(/* webpackChunkName: "detail" */ '../views/Detail.vue'),
   //   meta: {
   //     index: 2
   //   }
   // },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import(/* webpackChunkName: "detail" */ '../views/Login.vue'),
+    meta: {
+      index: 2
+    }
+  },
   // {
   //   path: '/address',
   //   name: 'address',

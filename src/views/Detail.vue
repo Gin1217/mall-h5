@@ -1,5 +1,5 @@
 <template>
-  <div class="home"><div>我是首页</div></div>
+  <div class="home"><div>这里是一个详情页面</div></div>
 </template>
 <script>
 export default { name: "Home" };

@@ -44,14 +44,14 @@ const routes = [
       index: 1,
     },
   },
-  {
-    path: '/detail',
-    name: 'detail',
-    component: () => import(/* webpackChunkName: "detail" */ '../views/Detail.vue'),
-    meta: {
-      index: 2
-    }
-  },
+  // {
+  //   path: '/detail',
+  //   name: 'detail',
+  //   component: () => import(/* webpackChunkName: "detail" */ '../views/Detail.vue'),
+  //   meta: {
+  //     index: 2
+  //   }
+  // },
   // {
   //   path: '/login',
   //   name: 'login',
