@@ -20,14 +20,10 @@ export default {
   },
   watch: {
     $route(to, from) {
-      // 主级到次级
-      console.log(this.ShowMenuList);
-      if (this.ShowMenuList.includes(to.path)) {
-        this.isShowNav = true;
-      } else {
-        this.isShowNav = false;
-      }
+      // 由主级到次级
+      // to.meta 能取到 route 路由参数中的 meta 属性
       if (to.meta.index > from.meta.index) {
+        // 通过改变变量名称控制左右滑动
         this.transitionName = "slide-left"; // 向左滑动
       } else if (to.meta.index < from.meta.index) {
         // 由次级到主级
@@ -41,13 +37,8 @@ export default {
 </script>
 
 <style lang="less">
-@import "./common/style/mixin";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  // height: 100vh;
 }
 #nav {
   padding: 30px;

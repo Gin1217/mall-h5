@@ -20,14 +20,10 @@ export default {
   },
   watch: {
     $route(to, from) {
-      // 主级到次级
-      console.log(this.ShowMenuList);
-      if (this.ShowMenuList.includes(to.path)) {
-        this.isShowNav = true;
-      } else {
-        this.isShowNav = false;
-      }
+      // 由主级到次级
+      // to.meta 能取到 route 路由参数中的 meta 属性
       if (to.meta.index > from.meta.index) {
+        // 通过改变变量名称控制左右滑动
         this.transitionName = "slide-left"; // 向左滑动
       } else if (to.meta.index < from.meta.index) {
         // 由次级到主级

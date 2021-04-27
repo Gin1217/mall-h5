@@ -11,15 +11,11 @@ export default {
 </script>
 <style lang="less" scoped>
 .home {
-    padding: 30px;
     div {
         background: grey;
         width: 150px;
         height: 150px;
         font-size: 18px;
-    }
-    i {
-        color:red;
     }
 }
 </style>
